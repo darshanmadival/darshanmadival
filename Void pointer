@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    void *vp;
+    int a=5;
+    float b=3;
+    char c='D';
+     
+    vp=&a;
+    printf("a=%d\n",*(int*)vp);
+    
+    vp=&b;
+    printf("b=%f\n",*(float*)vp);
+    
+    vp=&c;
+    printf("c=%c\n",*(char*)vp);
+    
+    return 0;
+    
+}
